@@ -11,7 +11,7 @@ To run:
 	
 Output:
 	
-	The PageRank program will print out sets of page ranks, each separated by a space, for the pages using the
+	The PageRank program will print out sets of page ranks (each separated by an empty line) for the pages using the
 	following algorithms:
 	
 	-Power Iteration, interpreting the input file as "SRC linksTo DST"

@@ -1,0 +1,25 @@
+To make: 
+
+	$ make
+
+To run:
+
+	Place page link input file in the same directory as the made class files. 
+	If it's in the wrong directory, it will tell you where to put it.
+	
+	$ java PageRank <inputFile.txt> <numberOfPages>
+	
+Output:
+	
+	The PageRank program will print out sets of page ranks for the pages using the
+	following algorithms:
+	
+	-Power Iteration, interpreting the input file as "SRC linksTo DST"
+	-Monte Carlo, interpreting the input file as "SRC linksTo DST"
+	-Power Iteration, interpreting the input file as "DST linksFrom SRC"
+	-Monte Carlo, interpreting the input file as "DST linksFrom SRC"
+
+	Note that the Monte Carlo results are not directly comparable to the 
+	Power Iteration results. The MC results are a distribution of probabilities
+	for each page, where as Power Iteration is a loose "spread" of a certain "total
+	amount of page rank"

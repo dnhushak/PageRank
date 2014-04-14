@@ -10,7 +10,7 @@ public class PageRank {
 		float iterThresh = .001f;
 		int numRuns = 10;
 		float alpha = .15f;
-
+		
 		// Generate the pages, link table, and a calculator for the
 		// "SRC linksTo DST" style
 		FileReader inputFile = getFile(args[0]);
@@ -27,15 +27,15 @@ public class PageRank {
 		calculator.calculatePowerIteration(iterThresh);
 		// Print all the page ranks
 		for (int i = 0; i < numNodes; i++) {
-			System.out.printf("%.4f\n", pageList[i].getPageRank());
+			//System.out.printf("%.4f\n", pageList[i].getPageRank());
 		}
 
 		// Calculate Monte Carlo probabilities
 		calculator.calculateMonteCarlo(numRuns, alpha);
-		System.out.println();
+		//System.out.println();
 		for (int i = 0; i < numNodes; i++) {
 			// Print all the page ranks
-			System.out.printf("%.4f\n", pageList[i].getPageRank());
+			//System.out.printf("%.4f\n", pageList[i].getPageRank());
 		}
 
 		// Generate the pages, link table, and a calculator for the
@@ -52,16 +52,16 @@ public class PageRank {
 			pageList2[i] = new PageNode(i);
 		}
 		calculator2.calculatePowerIteration(iterThresh);
-		System.out.println();
+		//System.out.println();
 		for (int i = 0; i < numNodes; i++) {
-			System.out.printf("%.4f\n", pageList2[i].getPageRank());
+			//System.out.printf("%.4f\n", pageList2[i].getPageRank());
 		}
 		// Calculate Monte Carlo probabilities
 		calculator2.calculateMonteCarlo(numRuns, alpha);
-		System.out.println();
+		//System.out.println();
 		for (int i = 0; i < numNodes; i++) {
 			// Print all the page ranks
-			System.out.printf("%.4f\n", pageList2[i].getPageRank());
+			//System.out.printf("%.4f\n", pageList2[i].getPageRank());
 		}
 
 	}

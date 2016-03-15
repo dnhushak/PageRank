@@ -8,7 +8,7 @@ public class PageRank {
 		int numNodes = Integer.parseInt(args[1]);
 		float dampingFactor = 0.15f;
 		float iterThresh = .001f;
-		int numRuns = 10;
+		int numRuns = 100;
 		float alpha = .15f;
 		
 		// Generate the pages, link table, and a calculator for the
